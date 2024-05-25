@@ -1,0 +1,49 @@
+:root{
+    --color1: #000000;
+    --color2: #fff;
+}
+html{
+    background-color: var(--color2);
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+    font: bold 1.7rem serif;
+    color: var(--color1);
+    margin: 10px;
+}
+.image img{
+    width: 200px;
+    height: 400px;
+    margin: 10px;
+}
+.buttons button{
+    color: var(--color1);
+    border-radius: 5px;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font: bold 1.2rem serif;
+    padding: 2px;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 0 0 10px black;
+}
+.buttons #red{
+    background-color: rgb(202, 41, 41);
+}
+.buttons #green{
+    background-color: rgb(35, 158, 35);
+}
+.buttons #yellow{
+    background-color: rgb(226, 226, 52);
+}
