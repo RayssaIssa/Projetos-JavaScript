@@ -5,6 +5,7 @@ const green = document.getElementById('green');
 const auto = document.getElementById('auto');
 let corIndex = 0;
 let color;
+let intervalId;
 
 function vermelho(){
     semaforo.src = 'img/vermelho.png';
@@ -29,8 +30,12 @@ function mudarCores(){
     semaforo.src = [color];
     nextIndex();
 }
+function stopAuto(){
+    clearInterval(intervalId);
+}
 function automatico(){
-    setInterval(mudarCores, 5000);
+    stopAuto();
+    intervalId = setInterval(mudarCores, 3000);
 }
 
 red.addEventListener('click', vermelho);
